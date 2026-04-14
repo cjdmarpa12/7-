@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            ul {
+                margin: 0;
+                padding: 0;
+            }
+            .container{
+                width: 1080px;
+                margin: 0 auto;
+                margin-bottom: 8px;
+            }
+            .flex-between {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .left{
+                width: 740px;
+                height: 428px;
+                background-color: red;
+            }
+            .right{
+                width: 332px;
+                height: 428px;
+                background-color: blue;
+            }
+            ul.gnb{
+                display: flex;
+                padding: 8px 16px;
+                background-color: green;
+            }
+            ul.gnb > li{
+                list-style-type: none;
+                padding-left: 16px;
+            }
+            ul.gnb > li:first-child
+            {
+                padding-left: 0px;
+            }
+            ul.rank {
+                background: yellow;
+                padding: 8px;
+            }
+            .rank > li{
+                list-style-type: none;
+            }
+            .footer {
+                background-color: yellow;
+                height: 80px;
+            }
+        </style>
+
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Logo</h1>
+            <div class="flex-between">
+                <ul class="gnb">
+                    <li>메일</li>
+                    <li>카페</li>
+                    <li>블로그</li>
+                    <li>쇼핑</li>
+                    <li>사전</li>
+                    <li>뉴스</li>
+                    <li>증권</li>
+                    <li>부동산</li>
+                    <li>지도</li>
+                </ul>
+                <ul class="rank">
+                    <li>실시간 검색 순위</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container flex-between">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+        <div class="container flex-between">
+            <div class="left"></div>
+            <div class="right"></div>
+        </div>
+        <div class="container">
+            <div class="footer"></div>
+        </div>
+    </body>
+</html>
